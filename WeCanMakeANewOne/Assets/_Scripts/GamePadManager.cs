@@ -34,7 +34,6 @@ public class GamePadManager : MonoBehaviour {
     }
 
     public static GamePadController.Controller GamePad(int playerIndex) {
-
         return Instance.GetGamePad(playerIndex);
     }
 }

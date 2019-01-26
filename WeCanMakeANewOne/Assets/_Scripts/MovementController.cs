@@ -9,8 +9,9 @@ public class MovementController : MonoBehaviour {
     private float speed_;
     private float rotateSpeed_;
 
-    private Vector2 movement_;
-    private Vector2 requestedMovement_;
+    private Vector3 movement_;
+    private float requestedMovementX_;
+    private float requestedMovementY_;
     private Quaternion targetRotation_;
 
     private Rigidbody playerRB_;
@@ -40,18 +41,21 @@ public class MovementController : MonoBehaviour {
         }
     }
 
-    public void RequestMove(Vector2 movement) { requestedMovement_ = movement; }
+    public void RequestMoveX(float movement) { requestedMovementX_ = movement; }
+    public void RequestMoveY(float movement) { requestedMovementY_ = movement; }
     public void RequestRotateTowards(Vector3 direction) {
-        direction.y = 0.0f;
-        targetRotation_ = Quaternion.LookRotation(direction);
+        if(direction != Vector3.zero) {
+            direction.y = 0.0f;
+            targetRotation_ = Quaternion.LookRotation(direction);
+        }
     }
 
     private void Move() {
-        movement_ = requestedMovement_;
+        movement_.Set(requestedMovementX_, 0.0f, requestedMovementY_);
 
         movement_ = movement_.normalized * speed_ * Time.deltaTime;
 
-        playerRB_.MovePosition(transform.position + new Vector3(movement_.x, 0.0f, movement_.y));
+        playerRB_.MovePosition(transform.position + movement_);
     }
     private void RotateTowards() {
         Quaternion newRotation = Quaternion.Lerp(transform.rotation, targetRotation_, rotateSpeed_);
