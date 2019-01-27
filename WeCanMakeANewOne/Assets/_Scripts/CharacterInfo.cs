@@ -8,4 +8,6 @@ public class CharacterInfo : MonoBehaviour
     public float speed = 10;
     [Range(0,1)]
     public float rotateSpeed = 0.25f;
+    public float dashForce = 100;
+    public float jumpForce = 100;
 }
