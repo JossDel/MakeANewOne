@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Acorn : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         var hit = collision.gameObject;
         //var health = hit.GetComponent<EnemyHealth>();
@@ -12,6 +12,11 @@ public class Acorn : MonoBehaviour
         //{
         //    health.TakeDamage(1);
         //}
+        if (collision.gameObject.tag.Equals("Enemy") == true)
+        {
+            Destroy(collision.gameObject);
+        }
+
         Destroy(gameObject);
     }
 }
