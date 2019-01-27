@@ -267,7 +267,32 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     13700000: Bodycut002
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 9322e2157eb99754b90d86d6fe6e132e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: 9322e2157eb99754b90d86d6fe6e132e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 9322e2157eb99754b90d86d6fe6e132e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoes
+    second: {fileID: 2100000, guid: 6fe20e5e1b52f7841adfa4459fb7cc70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sole
+    second: {fileID: 2100000, guid: 6fe20e5e1b52f7841adfa4459fb7cc70, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

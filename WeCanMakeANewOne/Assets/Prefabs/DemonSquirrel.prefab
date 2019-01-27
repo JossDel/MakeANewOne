@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1671585951}
+  - component: {fileID: 3334608586770859315}
   m_Layer: 10
-  m_Name: Enemy 1
+  m_Name: DemonSquirrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +29,29 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 566029119}
+  - {fileID: 2788751982081403286}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3334608586770859315
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450844763}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0152c097b11ac0545963dd807498b203, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &566029116
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,3 +201,78 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!1001 &7381497615721628321
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1671585951}
+    m_Modifications:
+    - target: {fileID: 770750759675118281, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_Name
+      value: DemonSquirrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20e27737ed4bd2e45975413d5912ff69, type: 3}
+--- !u!4 &2788751982081403286 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4666850569885575991, guid: 20e27737ed4bd2e45975413d5912ff69,
+    type: 3}
+  m_PrefabInstance: {fileID: 7381497615721628321}
+  m_PrefabAsset: {fileID: 0}
