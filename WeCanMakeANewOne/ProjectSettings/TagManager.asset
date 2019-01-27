@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - TheTree
+  - FrogBody
+  - FrogTongue
   layers:
   - Default
   - TransparentFX
